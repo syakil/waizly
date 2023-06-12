@@ -1,0 +1,1330 @@
+{
+	"info": {
+		"_postman_id": "884b6df4-cd39-4139-85c2-ffacecfa4dd0",
+		"name": "Waizly",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25184665",
+		"_collection_link": "https://universal-firefly-149395.postman.co/workspace/Amanah~f7f870e3-0b43-4d3e-b997-bc7c487da4cb/collection/25184665-884b6df4-cd39-4139-85c2-ffacecfa4dd0?action=share&creator=25184665&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ginanjar",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "ginanjar@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://waizly.test/api/register",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "ginanjar",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "ginanjar@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://waizly.test/api/register",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:48:39 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"name\": \"ginanjar\",\n        \"email\": \"ginanjar@gmail.com\",\n        \"updated_at\": \"2023-06-12T07:48:39.000000Z\",\n        \"created_at\": \"2023-06-12T07:48:39.000000Z\",\n        \"id\": 3\n    },\n    \"access_token\": \"5|z0y4qikluddgWj14ejYal36ntVL0qgldNj1lAJ0S\",\n    \"token_type\": \"Bearer\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "syakil@gmail.com",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://waizly.test/api/login",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "syakil@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://waizly.test/api/login",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:33:34 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Login success\",\n    \"access_token\": \"3|E0yhFhlnuTxeLiH8opCj1MkdbubeWoi5SzfRsGgt\",\n    \"token_type\": \"Bearer\"\n}"
+				},
+				{
+					"name": "401 Unauthorized",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "syakil@gmail.comw",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://waizly.test/api/login",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "Unauthorized",
+					"code": 401,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:33:58 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Unauthorized\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logout",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "4|GUkdg2pxOBeUtnvTRU1O2QlHGxlI2gL7c2nJvUe5",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://waizly.test/api/logout",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"logout"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200 OK",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://waizly.test/api/logout",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"logout"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 07:32:53 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"logout success\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Tasks",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|GxRTJpcT9xnM9iONumcDD6zEeJ7QZ5gY0F4HSqZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://waizly.test/api/task",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://waizly.test/api/task",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 17:09:44 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X49021eaba32d78261456439d47f1b181"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Get Data Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"task_name\": \"Task 1\",\n            \"description\": \"Description Task\",\n            \"due_date\": \"2022-02-21\",\n            \"task_status\": \"belum_selesai\",\n            \"user_id\": 1,\n            \"created_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"updated_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"name\": \"syakil\",\n            \"email\": \"syakil@gmail.com\",\n            \"email_verified_at\": null,\n            \"password\": \"$2y$10$AWzrFQVAunQ4ixtL4NHrh.FCv/kF0YGgUIMBvUXNALXHmRpT3v5Im\",\n            \"remember_token\": null\n        },\n        {\n            \"id\": 1,\n            \"task_name\": \"Task 1\",\n            \"description\": \"Description Task\",\n            \"due_date\": \"2022-02-21\",\n            \"task_status\": \"belum_selesai\",\n            \"user_id\": 1,\n            \"created_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"updated_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"name\": \"syakil\",\n            \"email\": \"syakil@gmail.com\",\n            \"email_verified_at\": null,\n            \"password\": \"$2y$10$AWzrFQVAunQ4ixtL4NHrh.FCv/kF0YGgUIMBvUXNALXHmRpT3v5Im\",\n            \"remember_token\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Tasks By Id",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|GxRTJpcT9xnM9iONumcDD6zEeJ7QZ5gY0F4HSqZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://waizly.test/api/task/2",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"task",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://waizly.test/api/task",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 17:09:44 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X49021eaba32d78261456439d47f1b181"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Get Data Success\",\n    \"data\": [\n        {\n            \"id\": 1,\n            \"task_name\": \"Task 1\",\n            \"description\": \"Description Task\",\n            \"due_date\": \"2022-02-21\",\n            \"task_status\": \"belum_selesai\",\n            \"user_id\": 1,\n            \"created_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"updated_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"name\": \"syakil\",\n            \"email\": \"syakil@gmail.com\",\n            \"email_verified_at\": null,\n            \"password\": \"$2y$10$AWzrFQVAunQ4ixtL4NHrh.FCv/kF0YGgUIMBvUXNALXHmRpT3v5Im\",\n            \"remember_token\": null\n        },\n        {\n            \"id\": 1,\n            \"task_name\": \"Task 1\",\n            \"description\": \"Description Task\",\n            \"due_date\": \"2022-02-21\",\n            \"task_status\": \"belum_selesai\",\n            \"user_id\": 1,\n            \"created_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"updated_at\": \"2023-06-12T07:30:53.000000Z\",\n            \"name\": \"syakil\",\n            \"email\": \"syakil@gmail.com\",\n            \"email_verified_at\": null,\n            \"password\": \"$2y$10$AWzrFQVAunQ4ixtL4NHrh.FCv/kF0YGgUIMBvUXNALXHmRpT3v5Im\",\n            \"remember_token\": null\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|GxRTJpcT9xnM9iONumcDD6zEeJ7QZ5gY0F4HSqZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "task_name",
+							"value": "Task 1",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Description Task",
+							"type": "text"
+						},
+						{
+							"key": "due_date",
+							"value": "2022-02-21",
+							"description": "format (y-m-d)",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://waizly.test/api/task",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"task"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "201",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "task_name",
+									"value": "Task 1",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Description Task",
+									"type": "text"
+								},
+								{
+									"key": "due_date",
+									"value": "2022-02-21",
+									"description": "format (y-m-d)",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://waizly.test/api/task",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"task"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 16:32:24 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X7a38f59d0a606631d7906acc598ac79f"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Create Data Success\",\n    \"data\": {\n        \"task_name\": \"Task 1\",\n        \"description\": \"Description Task\",\n        \"due_date\": \"2022-02-21\",\n        \"user_id\": 1,\n        \"updated_at\": \"2023-06-12T16:32:24.000000Z\",\n        \"created_at\": \"2023-06-12T16:32:24.000000Z\",\n        \"id\": 2\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Task Copy",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|GxRTJpcT9xnM9iONumcDD6zEeJ7QZ5gY0F4HSqZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"task_name\":\"Task 2\",\n    \"description\":\"Description Task 32\",\n    \"due_date\":\"2022-02-10\",\n    \"task_status\":\"selesai\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://waizly.test/api/task/2",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"task",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"task_name\":\"Task 2\",\n    \"description\":\"Description Task 32\",\n    \"due_date\":\"2022-02-10\",\n    \"task_status\":\"selesai\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://waizly.test/api/task/2",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"task",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 17:34:40 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "Xa1496aaa91c1f98236fbd5c978f187f4"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Update Data Success\",\n    \"data\": {\n        \"id\": 2,\n        \"task_name\": \"Task 2\",\n        \"description\": \"Description Task 32\",\n        \"due_date\": \"2022-02-10\",\n        \"task_status\": \"selesai\",\n        \"user_id\": 1,\n        \"created_at\": \"2023-06-12T16:32:24.000000Z\",\n        \"updated_at\": \"2023-06-12T17:34:40.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Status Task Selesai",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|GxRTJpcT9xnM9iONumcDD6zEeJ7QZ5gY0F4HSqZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "task_status",
+							"value": "selesai",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "http://waizly.test/api/task/belum_selesai/2",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"task",
+						"belum_selesai",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://waizly.test/api/task/2",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"task",
+								"2"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Update Status Task Belum Selesai",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|GxRTJpcT9xnM9iONumcDD6zEeJ7QZ5gY0F4HSqZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://waizly.test/api/task/selesai/2",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"task",
+						"selesai",
+						"2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://waizly.test/api/task/selesai/2",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"task",
+								"selesai",
+								"2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 17:10:24 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "Xd8e4649111122fe4fa1b2675d5d9b93d"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Update Task Success\",\n    \"data\": {\n        \"id\": 2,\n        \"task_name\": \"Task 1\",\n        \"description\": \"Description Task\",\n        \"due_date\": \"2022-02-21\",\n        \"task_status\": \"selesai\",\n        \"user_id\": 1,\n        \"created_at\": \"2023-06-12T16:32:24.000000Z\",\n        \"updated_at\": \"2023-06-12T17:10:24.000000Z\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Task",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "6|GxRTJpcT9xnM9iONumcDD6zEeJ7QZ5gY0F4HSqZw",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://waizly.test/api/task/1",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"task",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "200",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://waizly.test/api/task/1",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"task",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 17:43:43 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "Xd7ec24741b66f90432cc8683e1091928"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"Delete Task Success\"\n}"
+				}
+			]
+		}
+	]
+}
