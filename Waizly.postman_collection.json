@@ -1325,6 +1325,408 @@
 					"body": "{\n    \"message\": \"Delete Task Success\"\n}"
 				}
 			]
+		},
+		{
+			"name": "Problem Solving Basic 1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numbers\" : [1,3,5,7,9]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://waizly.test/api/problem_solving/basic1",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"problem_solving",
+						"basic1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Problem Solving Basic 1",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numbers\" : [1,3,5,7,9]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://waizly.test/api/problem_solving/basic1",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"problem_solving",
+								"basic1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 18:45:43 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "Xa08afccc3b14eb24ecbe0e25d02b3704"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "16  24"
+				}
+			]
+		},
+		{
+			"name": "Problem Solving Basic 2",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"numbers\" : [-4,3,-9,0,4,1]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://waizly.test/api/problem_solving/basic2",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"problem_solving",
+						"basic2"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Problem Solving Basic 2",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"numbers\" : [-4,3,-9,0,4,1]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://waizly.test/api/problem_solving/basic2",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"problem_solving",
+								"basic2"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 18:45:07 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "X87c38384d85f1b9ed0a96ca88e313dbe"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "0.500000\r\n0.333333\r\n0.166667"
+				}
+			]
+		},
+		{
+			"name": "Problem Solving Basic 3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"hour\" :\"12:01:02 AM\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://waizly.test/api/problem_solving/basic3",
+					"protocol": "http",
+					"host": [
+						"waizly",
+						"test"
+					],
+					"path": [
+						"api",
+						"problem_solving",
+						"basic3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Problem Solving Basic 3",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"hour\" :\"12:01:02 AM\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://waizly.test/api/problem_solving/basic3",
+							"protocol": "http",
+							"host": [
+								"waizly",
+								"test"
+							],
+							"path": [
+								"api",
+								"problem_solving",
+								"basic3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "html",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.25.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "text/html; charset=UTF-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.19"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Date",
+							"value": "Mon, 12 Jun 2023 18:50:11 GMT"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "phpdebugbar-id",
+							"value": "Xfd4055d62b81765cd628b49dde9f83a5"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "00:01:02"
+				}
+			]
 		}
 	]
 }

@@ -16,6 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::post('/register', [\App\Http\Controllers\Api\AuthController::class, 'register']);
 Route::post('/login', [\App\Http\Controllers\Api\AuthController::class, 'login']);
+Route::get('/problem_solving/basic1',[\App\Http\Controllers\ProblemSolvingController::class,'find_min_max']);
+Route::get('/problem_solving/basic2',[\App\Http\Controllers\ProblemSolvingController::class,'ratio']);
+Route::get('/problem_solving/basic3',[\App\Http\Controllers\ProblemSolvingController::class,'formatHour']);
 
 
 Route::middleware('auth:sanctum')->group(function () {
