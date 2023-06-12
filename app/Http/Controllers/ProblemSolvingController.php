@@ -23,14 +23,9 @@ class ProblemSolvingController extends Controller
 
     public function ratio(Request $request){
         $numbers = $request->numbers;
-        $length = count($numbers);
-        $positive = $this->count_positive($numbers);
-        $negative = $this->count_negative($numbers);
-        $zero = $this->count_zero($numbers);
-        $positive_ratio = number_format($positive/$length,6,'.');
-        $negative_ratio = number_format($negative/$length,6,'.');
-        $zero_ratio = number_format($zero/$length,6,'.');
-
+        $positive_ratio = number_format($this->count_positive($numbers)/count($numbers),6,'.');
+        $negative_ratio = number_format($this->count_negative($numbers)/count($numbers),6,'.');
+        $zero_ratio = number_format($this->count_zero($numbers)/count($numbers),6,'.');
         return $positive_ratio."\r\n".$negative_ratio."\r\n".$zero_ratio;
     }
 
